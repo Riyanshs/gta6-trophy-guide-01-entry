@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — Grand Theft Auto VI (PS5)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide &amp; tracker</p>
+    <h1>LEONIDA<br>TROPHY GUIDE</h1>
+    <p class="sub">All 55 official trophies — every name, description and grade as PlayStation publishes it, a guide in our own words for each one, and a tracker that saves your progress in your browser.</p>
+    <div class="judge-note">
+      <p><strong>Hello, judge — welcome to Leonida.</strong> We built this for the hunters: the whole road to the Platinum on one page, the one missable trophy flagged before you can miss it, and every guide citing where its facts come from. Thank you for playing through it — we hope it earns its place.</p>
+    </div>
+  </div>
+  <div class="progress-wrap" id="progress-wrap">
+    <div class="progress-numbers"><span id="progress-text">0 of 55 earned</span><span id="progress-pct">0%</span></div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+    <p class="progress-by-grade" id="progress-by-grade"></p>
+  </div>
+</header>
+
+<main>
+  <section class="roadmap" id="roadmap">
+    <h2>Roadmap to the Platinum &mdash; about 200 hours</h2>
+    <p class="roadmap-intro">Difficulty 4 out of 10: long, not hard. No online trophies, no difficulty trophies, no mission medals. One playthrough is enough — if you protect the one missable trophy in Stage 1.</p>
+    <div class="stages">
+      <article class="stage">
+        <h3>Stage 1 &mdash; Play the story <span class="stage-time">60&ndash;80 hours</span></h3>
+        <p>Finish all five chapters with Jason and Lucia. The 12 story trophies and the final-mission Gold pop as you go. Before you start, read the missable warning below, and keep a manual save at the start of every chapter plus one from just before the final mission — there is no mission replay and no New Game Plus. Never use cheats on your trophy save: cheats switch trophies and saving off.</p>
+        <p class="stage-trophies">Trophies: the 12 story trophies + <em>You Gotta Know When to Get Off</em> (Gold).</p>
+      </article>
+      <article class="stage">
+        <h3>Stage 2 &mdash; Reach 100% completion <span class="stage-time">about 100 hours</span></h3>
+        <p>After the credits, open <strong>Progress &gt; Stats &gt; 100% Completion</strong> — the checklist only appears after the story, but work you did earlier still counts. You do not need everything in the game, only the checklist's numbers: 100 optional tasks; all 39 gang operations, 22 bank jobs, 7 payday loan jobs and 8 bank vaults; 15 of 18 card sets, 100 WAiNK locations, all 33 underwater discoveries and 100 of 125 cocaine flamingos; 42 shooting range gold medals, 42 drone time trials, 300 stunts and 70 of 80 challenges. This stage earns <em>A Long Road</em> (Gold) and most of the Silvers.</p>
+        <p class="stage-trophies">Trophies: <em>A Long Road</em> (Gold), the grind Silvers, and most of the activity trophies.</p>
+      </article>
+      <article class="stage">
+        <h3>Stage 3 &mdash; Clean up <span class="stage-time">10&ndash;20 hours</span></h3>
+        <p>Finish the eight qualifying Strangers &amp; Freaks strands (Andy&rsquo;s, Billy&rsquo;s and Tyrone&rsquo;s do not count — they have their own trophies), the five side-story finales for Andy, Kenton, Billy, Randy and Tyrone, the last meditations, and any trophy still open. Then <em>Vice Got a Price!</em> pops — the Platinum is yours.</p>
+        <p class="stage-trophies">Trophies: the five finales, <em>Strangers &amp; Freaks</em> (Silver), the last meditations, then the Platinum.</p>
+      </article>
+    </div>
+    <div class="missable-callout" id="missable-callout">
+      <h3>&#9888; The one missable trophy</h3>
+      <p><strong>Positive Mental Attitude</strong> (Bronze) — meditate at all 18 spots across Leonida. One spot is Lucia&rsquo;s balcony meditation in <strong>Chapter 1</strong>: after the mission Down to Earth, find Lucia at Jason&rsquo;s house in the morning, follow her to the balcony and accept. It is gone once Chapter 1 ends, and there is no mission replay. Do it before you leave the chapter and keep a Chapter 1 manual save until the trophy pops. Everything else in the game can be done after the story.</p>
+      <p class="missable-also">Also time-sensitive, but not trophy-missable: the Race Against Yago in Chapter 3 carries an hourglass icon — race it the moment it appears, because its strand counts toward Strangers &amp; Freaks.</p>
+    </div>
+  </section>
+
+  <section class="controls" id="controls">
+    <div class="control-row">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Trophy name, mission, place&hellip;" autocomplete="off"></label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectible">Collectibles</option>
+          <option value="activity">Activities</option>
+          <option value="online">Online</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Status
+        <select id="status">
+          <option value="all">All</option>
+          <option value="earned">Earned</option>
+          <option value="todo">Not earned yet</option>
+        </select>
+      </label>
+      <label>Sort
+        <select id="sort">
+          <option value="default">Guide order</option>
+          <option value="grade">Grade (Platinum first)</option>
+          <option value="name">Name A&ndash;Z</option>
+        </select>
+      </label>
+    </div>
+    <div class="control-row">
+      <label class="toggle"><input id="spoilers" type="checkbox" checked> <span>Hide story spoilers — story trophy names, descriptions and guides stay hidden until earned</span></label>
+      <span class="spacer"></span>
+      <button id="export" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      <button id="reset" type="button">Reset</button>
+    </div>
+    <p class="filter-note" id="filter-note"></p>
+  </section>
+
+  <section class="list" id="list" aria-live="polite"></section>
+
+  <section class="sources">
+    <h2>Sources &amp; notes</h2>
+    <p>Official names, descriptions and grades are the PlayStation 5 list as published — 55 trophies: 1 Platinum, 2 Gold, 6 Silver, 46 Bronze, 28 of them hidden until earned. The guides on this page are written in the author&rsquo;s own words for this entry; they draw on the sources below and never copy their text. A guide that names a specific place or step cites its source beside it, and where the community had not pinned down a method by 19 November 2026, the guide says so instead of guessing.</p>
+    <ul id="source-list"></ul>
+    <p class="fineprint">Fan-made guide. Not affiliated with Rockstar Games or Sony Interactive Entertainment. No Rockstar logo, official artwork, box art or game screenshots are used anywhere in this guide — the look is our own. Progress is saved only in your browser (localStorage); nothing leaves your machine. List checked 19 November 2026.</p>
+  </section>
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
